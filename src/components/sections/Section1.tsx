@@ -1,4 +1,3 @@
-import React from "react";
 import { firstname, lastname } from "../../constants/name";
 export default function Section1() {
   return (

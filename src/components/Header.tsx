@@ -1,4 +1,3 @@
-import React from "react";
 import { location } from "../constants/location";
 
 export default function Header() {
