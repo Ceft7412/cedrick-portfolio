@@ -1,0 +1,381 @@
+.section-one {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-color: #273316;
+  color: #f2a156;
+  background-blend-mode: multiply;
+  //   color: #273316;
+  font-family: "JetBrains Mono", sans-serif;
+  .wrapper-1 {
+    max-width: 1800px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    padding: 10px;
+
+    .keyboard {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      align-items: center;
+      @include response-to(tablet) {
+        align-items: start;
+      }
+      .greeting {
+        font-size: 1.3rem;
+        align-self: flex-start;
+        span {
+          margin-left: 20px;
+        }
+      }
+      .keyboard__container:last-child {
+        // padding-left: 30rem;
+        padding-left: 0px;
+        line-height: 5rem;
+        @include response-to(tablet) {
+          padding-left: 20rem;
+        }
+      }
+      .keyboard__container {
+        @include response-to(tablet) {
+          line-height: 15rem;
+        }
+
+        &.namelast {
+          position: absolute;
+          left: 32rem;
+          rotate: 90deg;
+          .lastkey {
+            font-size: 3rem;
+          }
+        }
+        .key {
+          text-align: center;
+          font-size: 4.2rem;
+          display: inline-block;
+          letter-spacing: -0.5vw;
+
+          transition: transform 0.2s;
+        }
+
+        @include response-to(mobile-m) {
+          .key {
+            font-size: 4.5rem;
+          }
+        }
+        @include response-to(mobile-l) {
+          .key {
+            font-size: 5.5rem;
+          }
+        }
+        @include response-to(mobile-xl) {
+          .key {
+            font-size: 5.5rem;
+          }
+        }
+        @include response-to(tablet) {
+          .key {
+            font-size: 6.5rem;
+          }
+        }
+        @include response-to(laptop) {
+          .key {
+            font-size: 10rem;
+          }
+        }
+        @include response-to(laptopxl) {
+          .key {
+            font-size: 13rem;
+          }
+        }
+        @include response-to(desktop) {
+          .key {
+            font-size: 17rem;
+          }
+        }
+        @media screen and (min-width: 1600px) {
+          .key {
+            font-size: 20rem  ;
+          }
+        }
+      }
+
+      @keyframes pressDown1 {
+        30%,
+        40%,
+        100% {
+          transform: translateY(0);
+        }
+        35% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown2 {
+        70%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        75% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown3 {
+        30%,
+        40%,
+        100% {
+          transform: translateY(0);
+        }
+        35% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown4 {
+        40%,
+        50%,
+        100% {
+          transform: translateY(0);
+        }
+        45% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown5 {
+        20%,
+        30%,
+        100% {
+          transform: translateY(0);
+        }
+        25% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown6 {
+        60%,
+        70%,
+        100% {
+          transform: translateY(0);
+        }
+        65% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown7 {
+        10%,
+        20%,
+        100% {
+          transform: translateY(0);
+        }
+        15% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown8 {
+        35%,
+        45%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown9 {
+        50%,
+        60%,
+        100% {
+          transform: translateY(0);
+        }
+        55% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown10 {
+        80%,
+        90%,
+        100% {
+          transform: translateY(0);
+        }
+        85% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown11 {
+        70%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        75% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown12 {
+        90%,
+        100% {
+          transform: translateY(0);
+        }
+        95% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown13 {
+        60%,
+        70%,
+        100% {
+          transform: translateY(0);
+        }
+        65% {
+          transform: translateY(10px);
+        }
+      }
+
+      @keyframes pressDown14 {
+        80%,
+        90%,
+        100% {
+          transform: translateY(0);
+        }
+
+        85% {
+          transform: translateY(10px);
+        }
+      }
+
+      .key:nth-child(1) {
+        animation: pressDown1 2s infinite;
+      }
+
+      .key:nth-child(2) {
+        animation: pressDown2 3s infinite;
+      }
+
+      .key:nth-child(3) {
+        animation: pressDown3 4s infinite;
+      }
+
+      .key:nth-child(4) {
+        animation: pressDown4 2.5s infinite;
+      }
+
+      .key:nth-child(5) {
+        animation: pressDown5 2.5s infinite;
+      }
+
+      .key:nth-child(6) {
+        animation: pressDown6 3.5s infinite;
+      }
+
+      .key:nth-child(7) {
+        animation: pressDown7 2.2s infinite;
+      }
+
+      .key:nth-child(8) {
+        animation: pressDown8 3.2s infinite;
+      }
+
+      .key:nth-child(9) {
+        animation: pressDown9 4.2s infinite;
+      }
+
+      .key:nth-child(10) {
+        animation: pressDown10 2.7s infinite;
+      }
+
+      .key:nth-child(11) {
+        animation: pressDown11 3.7s infinite;
+      }
+
+      .key:nth-child(12) {
+        animation: pressDown12 2.2s infinite;
+      }
+
+      .key:nth-child(13) {
+        animation: pressDown13 3.2s infinite;
+      }
+
+      .key:nth-child(14) {
+        animation: pressDown14 4.2s infinite;
+      }
+    }
+    .tech-container {
+      display: flex;
+      position: relative;
+      text-align: center;
+
+      .shadow {
+        width: 100%;
+        top: 0;
+        right: -0.4rem;
+        z-index: 1;
+        text-shadow: none;
+        border: none;
+        box-shadow: none;
+        font-weight: bold;
+        background-image: linear-gradient(
+          45deg,
+          transparent 45%,
+          rgb(255, 255, 255) 45%,
+          rgb(255, 255, 255) 55%,
+          transparent 0
+        );
+        background-size: 0.05em 0.05em;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shad-anim 2s infinite linear;
+        @include response-to(tablet) {
+          font-size: 2.5rem;
+        }
+        @include response-to(laptop) {
+          font-size: 3rem;
+
+          background-image: linear-gradient(
+            45deg,
+            transparent 45%,
+            rgb(255, 255, 255) 45%,
+            rgb(255, 255, 255) 55%,
+            transparent 0
+          );
+        }
+      }
+    }
+  }
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}
+@keyframes leFadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+  }
+}

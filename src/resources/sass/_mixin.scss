@@ -1,0 +1,44 @@
+$breakpoint-mobile-s: 320px;
+$breakpoint-mobile-m: 375px;
+$breakpoint-mobile-l: 425px;
+$breakpoint-mobile-xl: 500px;
+$breakpoint-tablet: 768px;
+$breakpoint-laptop: 1024px;
+$breakpoint-laptopxl: 1280px;
+$breakpoint-desktop: 1440px;
+
+@mixin response-to($breakpoint) {
+  @if $breakpoint == mobile-s {
+    @media (min-width: $breakpoint-mobile-s) {
+      @content;
+    }
+  } @else if $breakpoint == mobile-m {
+    @media (min-width: $breakpoint-mobile-m) {
+      @content;
+    }
+  } @else if $breakpoint == mobile-l {
+    @media (min-width: $breakpoint-mobile-l) {
+      @content;
+    }
+  } @else if $breakpoint == mobile-xl {
+    @media (min-width: $breakpoint-mobile-xl) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (min-width: #{$breakpoint-tablet}) {
+      @content;
+    }
+  } @else if $breakpoint == laptop {
+    @media (min-width: #{$breakpoint-laptop}) {
+      @content;
+    }
+  } @else if $breakpoint == laptopxl {
+    @media (min-width: $breakpoint-laptopxl) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  padding: 30px 20px;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: white;
+  z-index: 1000;
+  justify-content: space-between;
+  @include response-to(tablet) {
+    padding: 20px 40px;
+    font-size: 1.2 rem;
+  }
+}
