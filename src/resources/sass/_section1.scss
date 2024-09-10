@@ -102,7 +102,7 @@
         }
         @media screen and (min-width: 1600px) {
           .key {
-            font-size: 20rem  ;
+            font-size: 20rem;
           }
         }
       }
@@ -347,7 +347,7 @@
           font-size: 2.5rem;
         }
         @include response-to(laptop) {
-          font-size: 3rem;
+          font-size: 2.5rem;
 
           background-image: linear-gradient(
             45deg,
